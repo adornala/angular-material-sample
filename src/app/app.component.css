@@ -1,0 +1,58 @@
+/* Structure */
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.loading-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 56px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableColumns {
+  float: right;
+  margin-bottom: 5px;
+}
+
+.pagination {
+  width: 90%;
+  float: left;
+}
+
+.mat-column-action {
+  width: 3px;
+}
+
+.bottom-checkbox {
+  display: inline-block;
+}
+
+.section {
+  display: inline-block;
+  align-content: center;
+  align-items: center;
+  height: 20px;
+  margin: 5px;
+}
+
+.toggle-show-details {
+  position: fixed;
+  bottom: 2px;
+  right: 10px;
+}
+
+mat-grid-tile {
+  background: lightblue;
+}

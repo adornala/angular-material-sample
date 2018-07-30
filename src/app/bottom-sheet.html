@@ -1,0 +1,9 @@
+<mat-card>
+  <mat-card-content >
+    <section class="section"> Check columns to display: </section>
+    <section *ngFor="let column of allColumns"  class="section">
+      <mat-checkbox *ngIf="column != 'action'" class="bottom-checkbox" [checked]="checkDisplayedColumns(column)"
+                    (change)="updateCheckedList(column, checkDisplayedColumns(column))" >{{column}}</mat-checkbox>
+    </section>
+  </mat-card-content>
+</mat-card>
