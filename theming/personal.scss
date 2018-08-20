@@ -1,0 +1,50 @@
+// define 3 theme color
+// mat-palette accepts $palette-name, main, lighter and darker variants
+@import '~@angular/material/theming';
+
+$mat-my-colors: (
+  50: #058659,
+  100: #408670,
+  200: #628675,
+  300: #628682,
+  400: #2c867a,
+  500: #058659,
+  600: #058659,
+  700: #058659,
+  800: #058659,
+  900: #058659,
+  A100: #058659,
+  A200: #058659,
+  A400: #058659,
+  A700: #058659,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $light-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+// always include only once per project
+@include mat-core();
+
+$my-theme-primary: mat-palette($mat-green, 700, 300, 900);
+$my-theme-accent: mat-palette($mat-deep-orange);
+$my-theme-warn: mat-palette($mat-deep-orange, A200);
+
+// create theme (use mat-dark-theme for themes with dark backgrounds)
+$my-theme: mat-light-theme(
+    $my-theme-primary,
+    $my-theme-accent,
+    $my-theme-warn
+);
